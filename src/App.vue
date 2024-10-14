@@ -1,7 +1,9 @@
 <template>
   <div class="app">
-    <post-form @create="createPost" />
-    <post-list :posts="posts" />
+    <post-form
+        @create="createPost" />
+    <post-list
+        :posts="posts" />
   </div>
 </template>
 
@@ -37,10 +39,8 @@ export default {
   },
 
   methods: {
-    createPost(post, second, third) {
-      console.log(post);
-      console.log(second);
-      console.log(third);
+    createPost(post) {
+      this.posts.push(post);
     },
   },
 };

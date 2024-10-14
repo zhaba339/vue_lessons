@@ -1,0 +1,27 @@
+<template>
+  <button class="btn">
+    <slot></slot>
+  </button>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style scoped>
+.btn {
+  margin-top: 15px;
+  align-self: flex-end;
+  padding: 10px 15px;
+  background: none;
+  color: teal;
+  border: 1px solid teal;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #008080; /* Цвет фона при наведении */
+  color: #ffffff;
+}
+</style>
